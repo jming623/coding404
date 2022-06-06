@@ -1,0 +1,29 @@
+##MySQL에 기본적인 프로시저 문법
+## DELIMITER $$
+## DROP PROCEDURE IF EXISTS setWorkList;
+## CREATE PROCEDURE setWorkList()
+## BEGIN
+
+## END	$$
+## DELIMITER ;
+
+
+##프로시저를 삭제하는 명령어
+DROP PROCEDURE IF EXISTS (프로시저명 ex:setWorkList);
+
+==============예제===============
+DELIMITER $$
+CREATE PROCEDURE setWorkList()
+BEGIN
+	DECLARE i int;
+    SET i = 1;
+    
+    WHILE( i <= 20) DO
+		insert into testboard(board_code,subject,writer,content)
+        values('news', CONCAT('test게시글 제목',i), 'admin', CONCAT('test게시글 내용',i) );
+    SET i = i + 1;
+    END WHILE;
+END	$$
+DELIMITER ;
+
+CALL setWorkList();
