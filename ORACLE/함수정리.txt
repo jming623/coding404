@@ -1,0 +1,42 @@
+문자열함수
+lower('문자열' )
+upper('문자열')
+initcap('문자열' )
+length('문자열' )
+instr('타겟' , 찾는값 )
+concat( 문자열 , 문자열 )
+substr( 타겟,  )
+Lpad( )
+Rpad( )
+Ltrim( )
+Rtrim( )
+trim( )
+replace( ) 
+
+숫자함수
+round(number, num) num자리에 0기준 소숫점 단위로 반올림 1은 소숫점 첫번째 자리(0.1) -1은 일의자리
+trunc( number, num ) num자리에 0기준 소숫점 단위로 자름 1은 소숫점 첫번째 자리(0.1) -1은 일의자리
+abs(number) 절대값
+ceil(number) 정수단위로 올림
+floor(number) 정수단위로 내림
+
+날짜함수
+sysdate
+systimestamp
+
+변환함수
+tochar(date,'fmt')
+tochar(number,'fmt')
+tonumber('char' , 'fmt')
+todate('char' , 'fmt') 
+
+nvl(타겟, 타겟이 null일때 변환할값)
+nvl(타겟, 타겟이 null이 아닐때 변환할값, 타겟이 null일때 변환할값)
+decode(타겟, a? , 실행, b? , 실행 ... , 실행)
+case~when~than 
+
+집합함수
+union( )
+union all( )
+intersect( )
+minus( )

@@ -1,0 +1,33 @@
+SQL 18c
+
+서버구축
+
+CDB 
+사용자 이름 sys
+
+호스트 = localhost (기본값) 
+포트 = 1521
+sid = xe
+
+
+PDB
+사용자 이름  sys
+
+호스트 = localhost (기본값) 
+포트 = 1521
+서비스이름 = XEPDB1
+
+
+* alter user hr account unlock
+* alter user hr identified by hr;
+
+= alter user hr account unlock identified by hr;
+
+
+hr
+사용자 이름 hr
+비밀번호 hr
+
+호스트 = localhost (기본값) 
+포트 = 1521
+서비스이름 = XEPDB1
